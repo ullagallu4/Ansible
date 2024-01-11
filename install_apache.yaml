@@ -1,0 +1,22 @@
+---
+- name: Install Apache on Ubuntu
+  hosts: all
+  become: yes  # Run tasks with sudo privileges
+
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install Apache
+      apt:
+        name: apache2
+        state: present
+
+    - name: Start Apache service
+      service:
+        name: apache2
+        state: started
+        enabled: yes  # Start Apache service on boot
+# ansible-playbook  install_apache.yml
+
