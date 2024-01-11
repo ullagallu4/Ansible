@@ -1,8 +1,8 @@
-[local]
+[local_server]
 localhost
 
-[agent-1]
+[worker_node_1]
 10.0.7.84
 
-[agent-2]
+[worker_node_2]
 10.0.3.96
