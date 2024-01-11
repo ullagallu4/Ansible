@@ -1,0 +1,8 @@
+[local]
+localhost
+
+[agent-1]
+10.0.7.84
+
+[agent-2]
+10.0.3.96
